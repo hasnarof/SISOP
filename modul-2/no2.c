@@ -29,7 +29,7 @@ int main(){
     else {
         while ((wait(&status)) > 0);
 
-        char *argv[] = {"cp","-r", "/home/ghifari/Music/", path, NULL};
+        char *argv[] = {"cp","-r", "/home/ghifari/Downloads/", path, NULL};
         execv("/bin/cp", argv);
     }
 }
