@@ -17,7 +17,7 @@ int main(){
    timeinfo = localtime(&rawtime);
     strftime(my_time, sizeof(my_time), "%d-%m-%Y_%H:%M:%S", timeinfo);
     strcpy(namaFolder, my_time);
-    strcpy(path,"/home/ghifari/code/Modul-02/Soal Latihan/");
+    strcpy(path,"/home/hasna/kuliah/SISOP/modul-2/");
 	strcat(path,namaFolder);
     strcat(path, "/");
     if ( child_id == 0) {
@@ -29,7 +29,7 @@ int main(){
     else {
         while ((wait(&status)) > 0);
 
-        char *argv[] = {"cp","-r", "/home/ghifari/Music/", path, NULL};
+        char *argv[] = {"cp","-r", "/home/hasna/Downloads/", path, NULL};
         execv("/bin/cp", argv);
     }
 }

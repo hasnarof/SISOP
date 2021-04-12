@@ -29,8 +29,7 @@ int main() {
     if (child_id == 0) {
         func1();
     } else {
-        while ((wait(&status)) > 0)
-            ;
+        while ((wait(&status)) > 0);
         func2();
     }
 }
